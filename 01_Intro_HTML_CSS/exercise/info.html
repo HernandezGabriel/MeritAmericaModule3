@@ -4,8 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/formstyles.css" />
+
 </head>
 <body>
-    
+
+    <h1>Sign up for a free vacation!</h1>
+    <form action="http://localhost:3000/api/users/signup" method="POST">
+        <label for="name">Full Name:</label>
+        <input type="text" name="name" id="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required>
+
+        <label for="date-of-birth">Date Of Birth:</label>
+        <input type="date" name="date-of-birth" id="date-of-birth">
+
+        <label for="favorite-color">Favorite Color:</label>
+        <input type="color" name="favorite-color" id="favorite-color">
+
+        <label for="lucky-number">Favorite Nubmer:</label>
+        <input type="number" name="lucky-number" id="lucky-number">
+
+        <label for="confirmation">Confirm everything is correct</label>
+        <input type="checkbox" name="confirmation" id="confirmation">
+
+        <label for="submit">Submit</label>
+        <input type="submit" name="submit" id="submit">
+
+    </form>
 </body>
 </html>

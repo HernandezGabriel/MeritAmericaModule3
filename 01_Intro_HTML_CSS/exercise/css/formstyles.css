@@ -1,0 +1,23 @@
+body{
+   background-color: papayawhip;
+}
+
+
+input{
+
+   margin-bottom: 2%;
+   margin-right: 100%;
+
+}
+input[type=email]{
+   padding-right: 20%;
+}
+input[type=text]{
+   padding-right: 20%;
+}
+label{
+
+   font-size: x-large;
+
+
+}
