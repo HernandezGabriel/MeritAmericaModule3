@@ -15,3 +15,95 @@ ul {
   margin: 0;
   padding: 0;
 }
+
+aside{
+  height: 100%;
+  position:fixed ;
+  border: rgba(0, 173, 238, 0.4);
+  border-width: 1px;
+  border-right-style: solid;
+
+
+
+  width: 200px;
+}
+
+
+img[src="mark.png"]{
+  height: 120px;
+  width: 120px;
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  text-align: center;
+
+
+
+}
+img[src="stacked-logo.png"]{
+  height: 100px;
+  padding-bottom: 10px;
+}
+
+.banner{
+  max-width:100%;
+}
+
+main{
+/*
+  position: relative;
+  left: 200px; */
+
+  margin-left: 200px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+
+}
+
+nav>ul>li{
+  list-style-position: inside;
+  border: solid 1px rgba(0, 173, 238, 0.4);
+  text-align: center;
+  text-transform: uppercase;
+  list-style: none;
+
+  width: max-content;
+  padding: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  color: rg;
+
+
+}
+nav>ul>li>a{
+  font-weight: bold;
+  color: #00ADEE;
+  text-decoration-line: none;
+}
+
+nav>ul>li:first-child>a{
+  text-underline-position: below;
+  text-decoration:underline;
+}
+
+section>div{
+  width: 33%;
+  display: inline-block;
+  padding-top: 3%;
+  padding:2%;
+
+}
+section h2{
+  color:#8CC36F;
+
+}
+h2>i{
+  padding-right: 5%;
+}
+div:nth-child(1),div:nth-child(2) {
+  border-right:solid 1px rgba(170, 239, 135, 0.8) ;
+}
+

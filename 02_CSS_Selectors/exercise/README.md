@@ -102,7 +102,7 @@ After this step, all tests under "Step Two" pass and your page something looks l
 
 ![After Step 2](./screenshots/step2.png)
 
-## Step Three: Style the `main` element 
+## Step Three: Style the `main` element
 
 In semantic HTML, the `<main>` element contains the main content of a webpage. The `<header>` element might contain introductory content or navigation for that page. In this webpage, the `<header>` displays the logo. The `<main>` element also contains a 2400x800 banner image that you'll style in this step.
 
