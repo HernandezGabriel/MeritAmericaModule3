@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<title>Processing API responses</title>
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no' name='viewport'>
+<link rel="shortcut icon" type="image/x-icon" href="/assets/bootcamp_os/favicon-799e146796e317b71579375a9018ae92c0b5ae4fa441127c3e8d19ab197da06e.ico" />
+<link rel="stylesheet" media="all" href="/assets/application-b7fb34641e8fec611f332d2d8006ce8a8672b94c35a3b725a0dd31b72d508ee8.css" />
+<link rel="stylesheet" media="all" href="/packs/application-18c662166a605e4148afa25906ac0214.css" />
+<script src="/packs/application-030ccd91a6318c970dbd.js"></script>
+<script src="/assets/application-ced8196be247e5a924ba78871b8591bb5dc784ab1b4fa1bf0e888815a3a85d5a.js"></script>
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="iTzpF2OrJ4mhaYaEInfdKUj8liXY1x93B8oTc3XzZT8ecQCAztdvkO8N0N3rL0SmiE7nJAs+ESqLJHXY6+Q7dQ==" />
+<script src='//use.typekit.net/fta2tko.js'></script>
+<script>
+  <!-- Google Tag Manager -->
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PL8P96T');
+  <!-- End Google Tag Manager -->
+</script>
+<script>
+  try { Typekit.load({ async: false }); } catch(e) {}
+</script>
+</head>
+<body class=''>
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+<iframe height='0' src='https://www.googletagmanager.com/ns.html?id=GTM-PL8P96T' style='display:none;visibility:hidden' width='0'></iframe>
+<!-- End Google Tag Manager (noscript) -->
+</noscript>
+<div class='primary-navigation navshadow' id='primary-navigation'>
+<a href="/"><img class="custom-logo" title="Logo navigates to curriculum overview" src="https://bootcamp-os-lms-prd-public.s3.us-west-2.amazonaws.com/content/merit-america-logo-06-22.png" /></a>
+<div class='item'>
+<div class='navigation-dropdown' title='Merit America Jan 2022 - Module 2'>
+<div class='label'>
+<div class='cohort-label'>
+Merit America Jan 2022 - Module 2
+</div>
+<svg class="icon" title="hover over to display dropdown of cohorts"><use xlink:href="/assets/images/svg/svg-sprite-navigation-symbol.svg#ic_arrow_drop_down_24px"></use></svg>
+</div>
+<ul class='list'>
+<li class='item'>
+<a title="Merit America Jan 2022 - Module 1" href="/cohorts/42">Merit America Jan 2022 - Module 1</a>
+</li>
+<li class='item'>
+<a title="Merit America Jan 2022 - Module 2" href="/cohorts/94">Merit America Jan 2022 - Module 2</a>
+</li>
+<li class='item'>
+<a title="Merit America Jan 2022 - Module 3" href="/cohorts/199">Merit America Jan 2022 - Module 3</a>
+</li>
+</ul>
+</div>
+</div>
+<div class='notifications'><div data-react-class="Notifications" data-react-props="{&quot;isMobileDevice&quot;:false}"></div></div>
+<div id='user-slide-out'></div>
+<div class='item'>
+<div class='navigation-dropdown'>
+<div class='label'>
+<div class='user-avatar'>
+<svg viewBox='0 0 80 80'>
+<text fill='#FFFFFF' font-size='36' font-weight='400'>
+<tspan text-anchor='middle' x='40' y='53'>
+GH
+</tspan>
+</text>
+</svg>
+</div>
+Gabriel Hernandez
+<svg class="icon" title="title user avatar hover over for dropdown menu"><use xlink:href="/assets/images/svg/svg-sprite-navigation-symbol.svg#ic_arrow_drop_down_24px"></use></svg>
+</div>
+<ul class='list'>
+<li class='item'>
+<a target="_blank" href="https://auth.techelevator.com/account">My Account</a>
+<span class='account-email'>hernandezgabriel533@gmail.com</span>
+</li>
+<li class='item'>
+<a href="/sign_out">Sign Out</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+<main>
+<script src="/javascripts/mathjax/tex-svg.js"></script>
+<div data-react-class="content_files/Lesson" data-react-props="{&quot;checkpoint&quot;:{&quot;attemptsRemaining&quot;:null,&quot;checkpointIsAutoscored&quot;:false,&quot;emailOnCompletion&quot;:false,&quot;info&quot;:{&quot;cohortId&quot;:94,&quot;cohortMode&quot;:&quot;Percentage&quot;,&quot;checkpointsByState&quot;:{&quot;done&quot;:null,&quot;retry&quot;:null,&quot;started&quot;:null,&quot;needs_review&quot;:null},&quot;challengeTotal&quot;:0,&quot;contentFilesSubmission&quot;:{&quot;id&quot;:26766,&quot;state&quot;:&quot;done&quot;,&quot;created_at&quot;:&quot;2022-05-10T03:13:33.827Z&quot;,&quot;last_performance_percent&quot;:100,&quot;total_possible_points&quot;:3,&quot;points_earned&quot;:3,&quot;path&quot;:&quot;/cohorts/94/checkpoint_submissions/26766&quot;},&quot;challengeCorrect&quot;:0},&quot;shoudlLoadStudentScores&quot;:true,&quot;timeLimit&quot;:null},&quot;cohort&quot;:{&quot;id&quot;:94,&quot;mode&quot;:&quot;Percentage&quot;,&quot;isSandBox&quot;:false,&quot;path&quot;:&quot;/cohorts/94&quot;,&quot;isWhiteLabeled&quot;:true,&quot;customLogo&quot;:&quot;https://bootcamp-os-lms-prd-public.s3.us-west-2.amazonaws.com/content/merit-america-logo-06-22.png&quot;,&quot;progressThresholds&quot;:[0,25,50,70,90,100],&quot;allowPairedSubmissions&quot;:false,&quot;students&quot;:null,&quot;allowOneClickTesting&quot;:false},&quot;contentFile&quot;:{&quot;id&quot;:2206,&quot;block_id&quot;:19,&quot;githubUrl&quot;:&quot;https://gitlab.com/te-curriculum/consuming-restful-apis-in-java-lms/blob/release_v2_0/02_Consuming_RESTful_APIs_Part_1/04-processing-API-responses.md&quot;,&quot;html&quot;:&quot;\u003ch1 id=\&quot;processing-api-responses\&quot;\u003eProcessing API responses\u003c/h1\u003e\n\u003cp\u003eNow you have the response, but how do you use the JSON data in your application?\u003c/p\u003e\n\u003ch2 id=\&quot;response-status\&quot;\u003eResponse status\u003c/h2\u003e\n\u003cp\u003e\u003ccode\u003eRestTemplate\u003c/code\u003e only parses the response if the HTTP request is sent successfully and receives a response with an HTTP status code indicating success. If the request isn&#39;t successful, \u003ccode\u003eRestTemplate\u003c/code\u003e throws an exception to indicate what went wrong. You&#39;ll learn how to handle errors in the next unit.\u003c/p\u003e\n\u003cp\u003eAs mentioned in the previous unit, HTTP responses include a status code. Anything in the 200-299 range is a success response. However, when performing a \u003ccode\u003eGET\u003c/code\u003e request, the only response code you need for success is \u003ccode\u003e200\u003c/code\u003e.\u003c/p\u003e\n\u003cdiv class=\&quot;callout callout-info\&quot;\u003e\u003csvg class=&#39;svg svg-24px&#39; viewBox=&#39;0 0 24 24&#39;\u003e\u003cuse xlink:href=&#39;/assets/images/svg/svg-sprite-action-symbol.svg#ic_info_outline_24px&#39;/\u003e\u003c/svg\u003e\u003ch2 id=\&quot;note-why-only-200\&quot;\u003eNote: Why only 200?\u003c/h2\u003e\n\u003cp\u003eDifferent response codes mean different things, even if they&#39;re all in the \u0026quot;success\u0026quot; category. Some response codes are only suitable for request methods other than \u003ccode\u003eGET\u003c/code\u003e. You&#39;ll see an example of that in the next unit.\u003c/p\u003e\n\u003c/div\u003e\u003ch2 id=\&quot;parsing-json\&quot;\u003eParsing JSON\u003c/h2\u003e\n\u003cp\u003eYou can use \u003ccode\u003eRestTemplate\u003c/code\u003e to make the request using HTTP \u003ccode\u003eGET\u003c/code\u003e, retrieve the response, and deserialize the response body—meaning the JSON—into a Java object or array of objects.\u003c/p\u003e\n\u003cp\u003e\u003ccode\u003eRestTemplate\u003c/code\u003e uses a \u003cstrong\u003edeserializer\u003c/strong\u003e, which converts a string into an object or array of objects. \u003ccode\u003eRestTemplate\u003c/code\u003e attempts to map every field in the JSON response to a Java class you provide. If the result is an array of objects, it attempts to create a structure you define. You could use an array or one of the Java Collections structures to store the data.\u003c/p\u003e\n\u003cp\u003eFirst, you need to define the class for JSON you&#39;re expecting. Take a look at the return JSON from the ExchangeRate-API:\u003c/p\u003e\n\u003cpre lang=\&quot;json\&quot;\u003e\u003ccode\u003e{\n  \u0026quot;base\u0026quot;: \u0026quot;USD\u0026quot;,\n  \u0026quot;date\u0026quot;: \u0026quot;2021-08-10\u0026quot;,\n  \u0026quot;time_last_updated\u0026quot;: 1628553601,\n  \u0026quot;rates\u0026quot;: {\n    \u0026quot;USD\u0026quot;: 1,\n    \u0026quot;AED\u0026quot;: 3.67,\n    \u0026quot;AFN\u0026quot;: 79.94,\n    \u0026quot;ALL\u0026quot;: 103.28,\n    \u0026quot;AMD\u0026quot;: 491.29,\n    \u0026quot;ANG\u0026quot;: 1.79,\n    \u0026quot;AOA\u0026quot;: 643.02,\n    \u0026quot;ARS\u0026quot;: 96.89,\n    \u0026quot;AUD\u0026quot;: 1.36,\n    \u0026quot;AWG\u0026quot;: 1.79,\n    //the rest omitted for brevity\n  }\n}\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eYou define your class with the same names. Note the slight variation—\u003ccode\u003etimeLastUpdated\u003c/code\u003e is OK:\u003c/p\u003e\n\u003cpre lang=\&quot;java\&quot;\u003e\u003ccode\u003epublic class ExchangeRates {\n    private String base;\n    private String date;\n    private String timeLastUpdated;\n    private Map\u0026lt;String, Double\u0026gt; rates;\n    // constructors, getters, setters...\n}\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eFirst, you&#39;ll make the \u003ccode\u003eGET\u003c/code\u003e request in a similar way that you&#39;ve already seen. There are two differences between the following code and the code you saw earlier. Namely, you use the \u003ccode\u003e.getForObject()\u003c/code\u003e method to return the JSON as an object that you specify, and the \u003ccode\u003eExchangeRates.class\u003c/code\u003e replaces the \u003ccode\u003eString.class\u003c/code\u003e:\u003c/p\u003e\n\u003cpre lang=\&quot;java\&quot;\u003e\u003ccode\u003eExchangeRates response = restTemplate.getForObject(\n                \u0026quot;https://api.exchangerate-api.com/v4/latest/USD\u0026quot;,\n                ExchangeRates.class);\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eThat single line of code returns an instantiated \u003ccode\u003eExchangeRate\u003c/code\u003e object populated with the JSON data. To get access to the data, call the getter methods on the class:\u003c/p\u003e\n\u003cpre lang=\&quot;java\&quot;\u003e\u003ccode\u003eSystem.out.println(response.getBase()); // prints USD\nSystem.out.println(response.getDate()); // prints 2021-08-10\n// etc...\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eIf you don&#39;t want all the fields returned by the API, you can omit them from your class. For example, if you didn&#39;t want the \u003ccode\u003ebase\u003c/code\u003e and \u003ccode\u003edate\u003c/code\u003e fields, you could declare your class like this:\u003c/p\u003e\n\u003cpre lang=\&quot;java\&quot;\u003e\u003ccode\u003epublic class ExchangeRates {\n    private String timeLastUpdated;\n    private Map\u0026lt;String, Double\u0026gt; rates;\n    // constructors, getters, setters...\n}\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eThe resulting object is constructed without those properties.\u003c/p\u003e\n\u003c!-- available callout types: info, success, warning, danger, secondary, star  --\u003e\n\u003cdiv class=\&quot;callout callout-info\&quot;\u003e\u003csvg class=&#39;svg svg-24px&#39; viewBox=&#39;0 0 24 24&#39;\u003e\u003cuse xlink:href=&#39;/assets/images/svg/svg-sprite-action-symbol.svg#ic_info_outline_24px&#39;/\u003e\u003c/svg\u003e\u003ch2 id=\&quot;note-overriding-the-default-naming-strategy\&quot;\u003eNote: Overriding the default naming strategy\u003c/h2\u003e\n\u003cp\u003eThe \u003ccode\u003eRestTemplate\u003c/code\u003e serialization process has a default \u003cem\u003enaming strategy\u003c/em\u003e which automatically converts between standard Java \u003cem\u003ecamelCase\u003c/em\u003e field names and JSON \u003cem\u003esnake_case\u003c/em\u003e property names. That&#39;s why the difference previously noted between the JSON property \u003ccode\u003etime_last_updated\u003c/code\u003e and the Java field \u003ccode\u003etimeLastUpdated\u003c/code\u003e names works without errors. The default naming strategy transparently handles the difference in names for you.\u003c/p\u003e\n\u003cp\u003eThere are times, however, when you may need to override the default naming strategy using the \u003ccode\u003e@JsonProperty()\u003c/code\u003e annotation. For instance, assume an \u003ccode\u003eEmployee\u003c/code\u003e class has the four fields—\u003ccode\u003efirstName\u003c/code\u003e, \u003ccode\u003elastName\u003c/code\u003e, \u003ccode\u003estreetAddress\u003c/code\u003e and \u003ccode\u003esecondAddress\u003c/code\u003e—but the receiver of the JSON expects the address properties to be named: \u003ccode\u003eaddress\u003c/code\u003e and \u003ccode\u003eaddress2\u003c/code\u003e:\u003c/p\u003e\n\u003cpre lang=\&quot;json\&quot;\u003e\u003ccode\u003e{\n  \u0026quot;first_name\u0026quot;: \u0026quot;Lawrence\u0026quot;,\n  \u0026quot;last_name\u0026quot;: \u0026quot;Ellison\u0026quot;,\n  \u0026quot;address\u0026quot;: \u0026quot;1234 Test Drive\u0026quot;,\n  \u0026quot;address2\u0026quot;: \u0026quot;\u0026quot;\n}\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eTo override the default naming strategy for the address fields, you annotate \u003ccode\u003eEmployee.java\u003c/code\u003e twice, once for \u003ccode\u003eaddress\u003c/code\u003e, and the other for \u003ccode\u003eaddress2\u003c/code\u003e. \u003cem\u003eDon&#39;t forget to include the required import, as the following code shows\u003c/em\u003e:\u003c/p\u003e\n\u003cpre lang=\&quot;Java\&quot;\u003e\u003ccode\u003e// Import the JsonProperty annotation in order to use it.\nimport com.fasterxml.jackson.annotation.JsonProperty;\n\npublic class Employee {\n  private String firstName;\n  private String lastName;\n  @JsonProperty(\u0026quot;address\u0026quot;)      // streetAddress =\u0026gt; address\n  private String streetAddress;\n  @JsonProperty(\u0026quot;address2\u0026quot;)     // secondAddress =\u0026gt; address2\n  private String secondAddress;\n\n  // Assume getters and setters\n\n}\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eThere is no need to annotate the \u003ccode\u003efirstName\u003c/code\u003e or \u003ccode\u003elastName\u003c/code\u003e fields since the default naming strategy handles them automatically.\u003c/p\u003e\n\u003c/div\u003e&quot;,&quot;isCheckpoint&quot;:false,&quot;path&quot;:&quot;02_Consuming_RESTful_APIs_Part_1/04-processing-API-responses.md&quot;,&quot;isResource&quot;:false,&quot;isIpynb&quot;:false,&quot;contentFilesSubmissions&quot;:[{&quot;id&quot;:2203,&quot;title&quot;:&quot;Introduction&quot;,&quot;uid&quot;:&quot;1c7125c79be18098af663600e0f6d10f&quot;,&quot;type_relative_position&quot;:1,&quot;content_file_type&quot;:&quot;lesson&quot;,&quot;hidden&quot;:false,&quot;content_file_path&quot;:&quot;/cohorts/94/blocks/19/content_files/02_Consuming_RESTful_APIs_Part_1/01-introduction.md&quot;,&quot;challenges&quot;:[]},{&quot;id&quot;:2204,&quot;title&quot;:&quot;Terminology&quot;,&quot;uid&quot;:&quot;2a13ec394a51ff6ed5461cc65936924f&quot;,&quot;type_relative_position&quot;:2,&quot;content_file_type&quot;:&quot;lesson&quot;,&quot;hidden&quot;:false,&quot;content_file_path&quot;:&quot;/cohorts/94/blocks/19/content_files/02_Consuming_RESTful_APIs_Part_1/02-terminology.md&quot;,&quot;challenges&quot;:[]},{&quot;id&quot;:2205,&quot;title&quot;:&quot;Using an API in code&quot;,&quot;uid&quot;:&quot;874873420c608f86a45517c4fad0bb58&quot;,&quot;type_relative_position&quot;:3,&quot;content_file_type&quot;:&quot;lesson&quot;,&quot;hidden&quot;:false,&quot;content_file_path&quot;:&quot;/cohorts/94/blocks/19/content_files/02_Consuming_RESTful_APIs_Part_1/03-using-an-API-in-code.md&quot;,&quot;challenges&quot;:[]},{&quot;id&quot;:2206,&quot;title&quot;:&quot;Processing API responses&quot;,&quot;uid&quot;:&quot;0169cc27e02d8550d6372d30c446929d&quot;,&quot;type_relative_position&quot;:4,&quot;content_file_type&quot;:&quot;lesson&quot;,&quot;hidden&quot;:false,&quot;content_file_path&quot;:&quot;/cohorts/94/blocks/19/content_files/02_Consuming_RESTful_APIs_Part_1/04-processing-API-responses.md&quot;,&quot;challenges&quot;:[]},{&quot;id&quot;:2207,&quot;title&quot;:&quot;Unit summary&quot;,&quot;uid&quot;:&quot;27dc24786ce6e0ed5760675e8046f6f7&quot;,&quot;type_relative_position&quot;:5,&quot;content_file_type&quot;:&quot;lesson&quot;,&quot;hidden&quot;:false,&quot;content_file_path&quot;:&quot;/cohorts/94/blocks/19/content_files/02_Consuming_RESTful_APIs_Part_1/50-unit-summary.md&quot;,&quot;challenges&quot;:[]},{&quot;id&quot;:2208,&quot;title&quot;:&quot;Tutorial instructions&quot;,&quot;uid&quot;:&quot;1821e830665e7648815c9ff01e1ebadf&quot;,&quot;type_relative_position&quot;:6,&quot;content_file_type&quot;:&quot;lesson&quot;,&quot;hidden&quot;:false,&quot;content_file_path&quot;:&quot;/cohorts/94/blocks/19/content_files/02_Consuming_RESTful_APIs_Part_1/70-tutorial.md&quot;,&quot;challenges&quot;:[]},{&quot;id&quot;:2209,&quot;title&quot;:&quot;Quiz&quot;,&quot;uid&quot;:&quot;a70504ce6d3316dc44ba6ab332012468&quot;,&quot;type_relative_position&quot;:7,&quot;content_file_type&quot;:&quot;lesson&quot;,&quot;hidden&quot;:false,&quot;content_file_path&quot;:&quot;/cohorts/94/blocks/19/content_files/02_Consuming_RESTful_APIs_Part_1/80-quiz.md&quot;,&quot;challenges&quot;:[{&quot;id&quot;:1803,&quot;uid&quot;:&quot;2aa0dd15-15a3-4446-a773-10e9466b1089&quot;,&quot;title&quot;:&quot;Consuming RESTful APIs (Part 1) 1&quot;,&quot;student_submissions&quot;:{&quot;565&quot;:{&quot;status&quot;:&quot;correct&quot;,&quot;correct_points&quot;:1,&quot;total_points&quot;:1}}},{&quot;id&quot;:1804,&quot;uid&quot;:&quot;eaf362e2-d85d-4556-a0f8-be5916c9416c&quot;,&quot;title&quot;:&quot;Consuming RESTful APIs (Part 1) 2&quot;,&quot;student_submissions&quot;:{&quot;565&quot;:{&quot;status&quot;:&quot;correct&quot;,&quot;correct_points&quot;:1,&quot;total_points&quot;:1}}},{&quot;id&quot;:1805,&quot;uid&quot;:&quot;65c7dac3-30dc-4ffd-9baf-c37a83727720&quot;,&quot;title&quot;:&quot;Consuming RESTful APIs (Part 1) 3&quot;,&quot;student_submissions&quot;:{&quot;565&quot;:{&quot;status&quot;:&quot;correct&quot;,&quot;correct_points&quot;:1,&quot;total_points&quot;:1}}},{&quot;id&quot;:1806,&quot;uid&quot;:&quot;c3bf73cc-c4bb-4b6d-b017-4a6409c687f6&quot;,&quot;title&quot;:&quot;Consuming RESTful APIs (Part 1) 4&quot;,&quot;student_submissions&quot;:{&quot;565&quot;:{&quot;status&quot;:&quot;correct&quot;,&quot;correct_points&quot;:1,&quot;total_points&quot;:1}}},{&quot;id&quot;:1807,&quot;uid&quot;:&quot;bde361e0-3719-4367-a056-50187bfaf0a6&quot;,&quot;title&quot;:&quot;Consuming RESTful APIs (Part 1) 5&quot;,&quot;student_submissions&quot;:{&quot;565&quot;:{&quot;status&quot;:&quot;correct&quot;,&quot;correct_points&quot;:1,&quot;total_points&quot;:1}}},{&quot;id&quot;:1808,&quot;uid&quot;:&quot;96dce60b-2036-40d7-a158-596832b5beb6&quot;,&quot;title&quot;:&quot;Consuming RESTful APIs (Part 1) 6&quot;,&quot;student_submissions&quot;:{&quot;565&quot;:{&quot;status&quot;:&quot;correct&quot;,&quot;correct_points&quot;:1,&quot;total_points&quot;:1}}},{&quot;id&quot;:1809,&quot;uid&quot;:&quot;0b2ec352-ebd5-40d0-a78b-e8cf700947ae&quot;,&quot;title&quot;:&quot;Consuming RESTful APIs (Part 1) 7&quot;,&quot;student_submissions&quot;:{&quot;565&quot;:{&quot;status&quot;:&quot;correct&quot;,&quot;correct_points&quot;:1,&quot;total_points&quot;:1}}},{&quot;id&quot;:1810,&quot;uid&quot;:&quot;19bc0954-7677-4e6b-9db0-210fb1255f6e&quot;,&quot;title&quot;:&quot;Consuming RESTful APIs (Part 1) 8&quot;,&quot;student_submissions&quot;:{&quot;565&quot;:{&quot;status&quot;:&quot;correct&quot;,&quot;correct_points&quot;:1,&quot;total_points&quot;:1}}}]},{&quot;id&quot;:2210,&quot;title&quot;:&quot;Exercise&quot;,&quot;uid&quot;:&quot;6077fe878a2bfa25b547793beb3786f1&quot;,&quot;type_relative_position&quot;:1,&quot;content_file_type&quot;:&quot;checkpoint&quot;,&quot;hidden&quot;:false,&quot;content_file_path&quot;:&quot;/cohorts/94/blocks/19/content_files/02_Consuming_RESTful_APIs_Part_1/90-exercise.md&quot;,&quot;challenges&quot;:[{&quot;id&quot;:1811,&quot;uid&quot;:&quot;1979f3d8-7b57-4fa3-8e8c-19f3b5c54875&quot;,&quot;title&quot;:&quot;Exercise for Consuming RESTful APIs - Part 1&quot;,&quot;student_submissions&quot;:{&quot;565&quot;:{&quot;status&quot;:&quot;correct&quot;,&quot;correct_points&quot;:3,&quot;total_points&quot;:3}}}],&quot;checkpoint_submissions&quot;:{&quot;565&quot;:{&quot;id&quot;:26766,&quot;state&quot;:&quot;done&quot;,&quot;created_at&quot;:&quot;2022-05-10T03:13:33.827Z&quot;,&quot;last_performance_percent&quot;:100,&quot;total_possible_points&quot;:3,&quot;points_earned&quot;:3,&quot;path&quot;:&quot;/cohorts/94/checkpoint_submissions/26766&quot;}},&quot;total_points&quot;:3,&quot;correct_points&quot;:3}],&quot;title&quot;:&quot;Processing API responses&quot;,&quot;permalink&quot;:&quot;https://lms.techelevator.com/content_link/gitlab.com/te-curriculum/consuming-restful-apis-in-java-lms/02_Consuming_RESTful_APIs_Part_1/04-processing-API-responses.md&quot;,&quot;isHidden&quot;:false,&quot;presenter&quot;:{&quot;cohort_id&quot;:94,&quot;checkpoint_submission_results_path&quot;:&quot;/cohorts/94/content_files/2206/submitted_challenge_answers/checkpoint_submission_results&quot;,&quot;batch_create_cohort_content_file_submitted_challenge_answers_path&quot;:&quot;/cohorts/94/content_files/2206/submitted_challenge_answers/batch_create&quot;,&quot;cohort&quot;:{&quot;id&quot;:94,&quot;uid&quot;:&quot;ea2181ee94b22b3687&quot;,&quot;name&quot;:&quot;Merit America Jan 2022 - Module 2&quot;,&quot;product_type&quot;:&quot;Java B2C&quot;,&quot;label&quot;:null,&quot;campus_name&quot;:&quot;&quot;,&quot;slack_channel&quot;:null,&quot;starts_on&quot;:&quot;2022-04-18T00:00:00.000Z&quot;,&quot;ends_on&quot;:null,&quot;created_at&quot;:&quot;2022-04-14T16:32:39.410Z&quot;,&quot;updated_at&quot;:&quot;2022-06-06T14:31:16.200Z&quot;,&quot;deleted_at&quot;:null,&quot;mode&quot;:&quot;Percentage&quot;,&quot;settings&quot;:{&quot;progress_thresholds&quot;:[0,25,50,70,90,100]},&quot;user_id&quot;:null,&quot;sandbox&quot;:false,&quot;allow_paired_submissions&quot;:false,&quot;whitelabeled&quot;:true,&quot;logo_url&quot;:&quot;https://bootcamp-os-lms-prd-public.s3.us-west-2.amazonaws.com/content/merit-america-logo-06-22.png&quot;,&quot;student_import_state&quot;:null,&quot;student_import_completed_at&quot;:null,&quot;program&quot;:&quot;Enterprise&quot;,&quot;subject&quot;:&quot;Java&quot;,&quot;format&quot;:&quot;Part Time&quot;,&quot;category&quot;:&quot;Immersive&quot;,&quot;client&quot;:&quot;Merit America&quot;,&quot;cohort_code&quot;:&quot;&quot;,&quot;copy_of&quot;:null,&quot;allow_due_dates&quot;:false,&quot;show_checkpoint_points&quot;:true,&quot;allow_one_click_testing&quot;:false},&quot;current_content_file_id&quot;:2206,&quot;current_standard&quot;:{&quot;id&quot;:279,&quot;uid&quot;:&quot;edb8336a0c22ff8785c1733093ccfdda&quot;,&quot;release_id&quot;:84,&quot;description&quot;:&quot;Learn how to retrieve data from a web API.&quot;,&quot;title&quot;:&quot;Consuming RESTful APIs (Part 1)&quot;,&quot;success_criteria&quot;:[&quot;success criteria&quot;],&quot;position&quot;:0,&quot;created_at&quot;:&quot;2022-01-07T16:15:02.921Z&quot;,&quot;updated_at&quot;:&quot;2022-01-07T16:15:02.921Z&quot;},&quot;visibilities&quot;:{&quot;Standard&quot;:[{&quot;id&quot;:4999,&quot;cohort_id&quot;:94,&quot;content_type&quot;:&quot;Standard&quot;,&quot;content_uid&quot;:&quot;398e571f9e4740baa1ab40a6173bd439&quot;,&quot;created_at&quot;:&quot;2022-05-21T20:01:07.429Z&quot;,&quot;updated_at&quot;:&quot;2022-05-21T20:01:07.429Z&quot;,&quot;visibility_type&quot;:&quot;hidden&quot;,&quot;block_id&quot;:5},{&quot;id&quot;:5000,&quot;cohort_id&quot;:94,&quot;content_type&quot;:&quot;Standard&quot;,&quot;content_uid&quot;:&quot;d52387880e1ea22817a72d3759213819&quot;,&quot;created_at&quot;:&quot;2022-05-21T20:01:18.848Z&quot;,&quot;updated_at&quot;:&quot;2022-05-21T20:01:18.848Z&quot;,&quot;visibility_type&quot;:&quot;hidden&quot;,&quot;block_id&quot;:5},{&quot;id&quot;:5001,&quot;cohort_id&quot;:94,&quot;content_type&quot;:&quot;Standard&quot;,&quot;content_uid&quot;:&quot;0bcc70105ad279503e31fe7b3f47b665&quot;,&quot;created_at&quot;:&quot;2022-05-21T20:01:19.600Z&quot;,&quot;updated_at&quot;:&quot;2022-05-21T20:01:19.600Z&quot;,&quot;visibility_type&quot;:&quot;hidden&quot;,&quot;block_id&quot;:5},{&quot;id&quot;:5002,&quot;cohort_id&quot;:94,&quot;content_type&quot;:&quot;Standard&quot;,&quot;content_uid&quot;:&quot;660d3da18fc989381d42918e74f47399&quot;,&quot;created_at&quot;:&quot;2022-05-21T23:21:37.696Z&quot;,&quot;updated_at&quot;:&quot;2022-05-21T23:21:37.696Z&quot;,&quot;visibility_type&quot;:&quot;hidden&quot;,&quot;block_id&quot;:5},{&quot;id&quot;:2893,&quot;cohort_id&quot;:94,&quot;content_type&quot;:&quot;Standard&quot;,&quot;content_uid&quot;:&quot;66a73c9f8a6c46e0879c3277cf9e78b0&quot;,&quot;created_at&quot;:&quot;2022-04-14T16:40:19.307Z&quot;,&quot;updated_at&quot;:&quot;2022-04-14T16:40:19.307Z&quot;,&quot;visibility_type&quot;:&quot;hidden&quot;,&quot;block_id&quot;:5},{&quot;id&quot;:5003,&quot;cohort_id&quot;:94,&quot;content_type&quot;:&quot;Standard&quot;,&quot;content_uid&quot;:&quot;339d19172a717296fe80eb380dd3cfe5&quot;,&quot;created_at&quot;:&quot;2022-05-21T23:24:03.105Z&quot;,&quot;updated_at&quot;:&quot;2022-05-21T23:24:03.105Z&quot;,&quot;visibility_type&quot;:&quot;hidden&quot;,&quot;block_id&quot;:5},{&quot;id&quot;:4990,&quot;cohort_id&quot;:94,&quot;content_type&quot;:&quot;Standard&quot;,&quot;content_uid&quot;:&quot;b2a86b9591e7785a2ef199e6b6655237&quot;,&quot;created_at&quot;:&quot;2022-05-21T16:10:18.990Z&quot;,&quot;updated_at&quot;:&quot;2022-05-21T16:10:18.990Z&quot;,&quot;visibility_type&quot;:&quot;hidden&quot;,&quot;block_id&quot;:5}],&quot;ContentFile&quot;:[{&quot;id&quot;:2911,&quot;cohort_id&quot;:94,&quot;content_type&quot;:&quot;ContentFile&quot;,&quot;content_uid&quot;:&quot;d9c7bd8be2ee4f748073ba8eb1e42a9f&quot;,&quot;created_at&quot;:&quot;2022-04-14T16:41:33.837Z&quot;,&quot;updated_at&quot;:&quot;2022-04-14T16:41:33.837Z&quot;,&quot;visibility_type&quot;:&quot;hidden&quot;,&quot;block_id&quot;:10},{&quot;id&quot;:2912,&quot;cohort_id&quot;:94,&quot;content_type&quot;:&quot;ContentFile&quot;,&quot;content_uid&quot;:&quot;153c8ddc7b0dbdf0b0a329d7614645d7&quot;,&quot;created_at&quot;:&quot;2022-04-14T16:42:06.187Z&quot;,&quot;updated_at&quot;:&quot;2022-04-14T16:42:06.187Z&quot;,&quot;visibility_type&quot;:&quot;hidden&quot;,&quot;block_id&quot;:14}]},&quot;current_content_files&quot;:[{&quot;id&quot;:2203,&quot;standard_id&quot;:279,&quot;position&quot;:1,&quot;html&quot;:&quot;\u003ch1 id=\&quot;introduction\&quot;\u003eIntroduction\u003c/h1\u003e\n\u003cp\u003eSo far you&#39;ve learned about the HTTP protocol and how requests are made. Now you&#39;ll learn how to make HTTP requests in your code and how to handle the data you get back.\u003c/p\u003e\n\u003cp\u003eTo interact with web services, you need a way to send HTTP requests and process the results. This is usually accomplished using a class or library that provides a \u0026quot;client\u0026quot; to make the requests and methods to read the response from the server.\u003c/p\u003e\n\u003cp\u003eIn this unit, you&#39;ll continue to use Spring framework libraries to assist you. In this case, you&#39;ll use the Spring REST Client \u003ca href=\&quot;https://docs.spring.io/spring/docs/current/spring-framework-reference/integration.html#rest-resttemplate\&quot; class=\&quot;external-link\&quot; target=\&quot;_blank\&quot;\u003eRestTemplate\u003c/a\u003e. It&#39;s available through Java&#39;s dependency management platform called Maven. The code that you&#39;ll work with has \u003ccode\u003eRestTemplate\u003c/code\u003e installed already.\u003c/p\u003e\n&quot;,&quot;content_file_type&quot;:&quot;lesson&quot;,&quot;path&quot;:&quot;02_Consuming_RESTful_APIs_Part_1/01-introduction.md&quot;,&quot;created_at&quot;:&quot;2022-01-07T16:15:02.947Z&quot;,&quot;updated_at&quot;:&quot;2022-01-07T16:15:02.947Z&quot;,&quot;autoscore&quot;:false,&quot;title&quot;:&quot;Introduction&quot;,&quot;uid&quot;:&quot;1c7125c79be18098af663600e0f6d10f&quot;,&quot;type_relative_position&quot;:1,&quot;default_visibility&quot;:&quot;visible&quot;,&quot;max_checkpoint_submissions&quot;:null,&quot;warnings&quot;:[],&quot;time_limit&quot;:null,&quot;email_on_completion&quot;:false},{&quot;id&quot;:2204,&quot;standard_id&quot;:279,&quot;position&quot;:2,&quot;html&quot;:&quot;\u003ch1 id=\&quot;terminology\&quot;\u003eTerminology\u003c/h1\u003e\n\u003cp\u003eTo review, API stands for \u003cstrong\u003eapplication programming interface\u003c/strong\u003e (API). An API is a mechanism, or protocol, that allows the transfer of data between different computer programs.\u003c/p\u003e\n\u003cp\u003eA \u003cstrong\u003eWeb API\u003c/strong\u003e is an API that&#39;s accessible on the internet. As you learn more about Web APIs, you may see the term \u0026quot;consuming an API\u0026quot; on the internet or hear about it when talking with other developers. \u0026quot;Consuming an API\u0026quot; means that you&#39;re interacting with a Web API in your code.\u003c/p\u003e\n\u003cp\u003eA Web API \u003cstrong\u003eendpoint\u003c/strong\u003e is the URL that you use to access the API. In the case of the ExchangeRate-API from the previous unit, the endpoint is \u003ccode\u003ehttps://api.exchangerate-api.com/v4/latest/USD\u003c/code\u003e.\u003c/p\u003e\n\u003cp\u003eAn API often returns data in \u003cstrong\u003eJavaScript Object Notation\u003c/strong\u003e (JSON) format, which is a lightweight and human readable data format that uses key-value pairs to define and structure data. The JSON format may represent an array of results or a single result.\u003c/p\u003e\n\u003cp\u003eThe examples that follow use the ExchangeRate-API for code demonstration. Before continuing on, look at the data returned from the API, either in your browser or in Postman. Note that the result is returned as a single object.\u003c/p\u003e\n&quot;,&quot;content_file_type&quot;:&quot;lesson&quot;,&quot;path&quot;:&quot;02_Consuming_RESTful_APIs_Part_1/02-terminology.md&quot;,&quot;created_at&quot;:&quot;2022-01-07T16:15:02.964Z&quot;,&quot;updated_at&quot;:&quot;2022-01-07T16:15:02.964Z&quot;,&quot;autoscore&quot;:false,&quot;title&quot;:&quot;Terminology&quot;,&quot;uid&quot;:&quot;2a13ec394a51ff6ed5461cc65936924f&quot;,&quot;type_relative_position&quot;:2,&quot;default_visibility&quot;:&quot;visible&quot;,&quot;max_checkpoint_submissions&quot;:null,&quot;warnings&quot;:[],&quot;time_limit&quot;:null,&quot;email_on_completion&quot;:false},{&quot;id&quot;:2205,&quot;standard_id&quot;:279,&quot;position&quot;:3,&quot;html&quot;:&quot;\u003ch1 id=\&quot;using-an-api-in-code\&quot;\u003eUsing an API in code\u003c/h1\u003e\n\u003cp\u003eUsing \u003ccode\u003eRestTemplate\u003c/code\u003e, you can make a basic HTTP \u003ccode\u003eGET\u003c/code\u003e request to the ExchangeRate-API using the following code:\u003c/p\u003e\n\u003cpre lang=\&quot;java\&quot;\u003e\u003ccode\u003eRestTemplate restTemplate = new RestTemplate(); // Create a new client\nResponseEntity response = restTemplate.getForEntity(\n                \u0026quot;https://api.exchangerate-api.com/v4/latest/USD\u0026quot;,\n                String.class); // Make GET request using client\nSystem.out.println(response.getBody()); // Your return data returned from .getBody()\n\u003c/code\u003e\u003c/pre\u003e\n\u003cdiv class=\&quot;callout callout-info\&quot;\u003e\u003csvg class=&#39;svg svg-24px&#39; viewBox=&#39;0 0 24 24&#39;\u003e\u003cuse xlink:href=&#39;/assets/images/svg/svg-sprite-action-symbol.svg#ic_info_outline_24px&#39;/\u003e\u003c/svg\u003e\u003ch2 id=\&quot;note-what-does-responsegetbody-return\&quot;\u003eNote: What does response.getBody() return?\u003c/h2\u003e\n\u003cp\u003e\u003ccode\u003eresponse.getBody()\u003c/code\u003e returns a string representation of the JSON, just like if you saw the API response in your browser. In the next section, you&#39;ll see how \u003ccode\u003eRestTemplate\u003c/code\u003e can automatically convert the response data into a Java object.\u003c/p\u003e\n\u003c/div\u003e&quot;,&quot;content_file_type&quot;:&quot;lesson&quot;,&quot;path&quot;:&quot;02_Consuming_RESTful_APIs_Part_1/03-using-an-API-in-code.md&quot;,&quot;created_at&quot;:&quot;2022-01-07T16:15:02.981Z&quot;,&quot;updated_at&quot;:&quot;2022-01-07T16:15:02.981Z&quot;,&quot;autoscore&quot;:false,&quot;title&quot;:&quot;Using an API in code&quot;,&quot;uid&quot;:&quot;874873420c608f86a45517c4fad0bb58&quot;,&quot;type_relative_position&quot;:3,&quot;default_visibility&quot;:&quot;visible&quot;,&quot;max_checkpoint_submissions&quot;:null,&quot;warnings&quot;:[],&quot;time_limit&quot;:null,&quot;email_on_completion&quot;:false},{&quot;id&quot;:2206,&quot;standard_id&quot;:279,&quot;position&quot;:4,&quot;html&quot;:&quot;\u003ch1 id=\&quot;processing-api-responses\&quot;\u003eProcessing API responses\u003c/h1\u003e\n\u003cp\u003eNow you have the response, but how do you use the JSON data in your application?\u003c/p\u003e\n\u003ch2 id=\&quot;response-status\&quot;\u003eResponse status\u003c/h2\u003e\n\u003cp\u003e\u003ccode\u003eRestTemplate\u003c/code\u003e only parses the response if the HTTP request is sent successfully and receives a response with an HTTP status code indicating success. If the request isn&#39;t successful, \u003ccode\u003eRestTemplate\u003c/code\u003e throws an exception to indicate what went wrong. You&#39;ll learn how to handle errors in the next unit.\u003c/p\u003e\n\u003cp\u003eAs mentioned in the previous unit, HTTP responses include a status code. Anything in the 200-299 range is a success response. However, when performing a \u003ccode\u003eGET\u003c/code\u003e request, the only response code you need for success is \u003ccode\u003e200\u003c/code\u003e.\u003c/p\u003e\n\u003cdiv class=\&quot;callout callout-info\&quot;\u003e\u003csvg class=&#39;svg svg-24px&#39; viewBox=&#39;0 0 24 24&#39;\u003e\u003cuse xlink:href=&#39;/assets/images/svg/svg-sprite-action-symbol.svg#ic_info_outline_24px&#39;/\u003e\u003c/svg\u003e\u003ch2 id=\&quot;note-why-only-200\&quot;\u003eNote: Why only 200?\u003c/h2\u003e\n\u003cp\u003eDifferent response codes mean different things, even if they&#39;re all in the \u0026quot;success\u0026quot; category. Some response codes are only suitable for request methods other than \u003ccode\u003eGET\u003c/code\u003e. You&#39;ll see an example of that in the next unit.\u003c/p\u003e\n\u003c/div\u003e\u003ch2 id=\&quot;parsing-json\&quot;\u003eParsing JSON\u003c/h2\u003e\n\u003cp\u003eYou can use \u003ccode\u003eRestTemplate\u003c/code\u003e to make the request using HTTP \u003ccode\u003eGET\u003c/code\u003e, retrieve the response, and deserialize the response body—meaning the JSON—into a Java object or array of objects.\u003c/p\u003e\n\u003cp\u003e\u003ccode\u003eRestTemplate\u003c/code\u003e uses a \u003cstrong\u003edeserializer\u003c/strong\u003e, which converts a string into an object or array of objects. \u003ccode\u003eRestTemplate\u003c/code\u003e attempts to map every field in the JSON response to a Java class you provide. If the result is an array of objects, it attempts to create a structure you define. You could use an array or one of the Java Collections structures to store the data.\u003c/p\u003e\n\u003cp\u003eFirst, you need to define the class for JSON you&#39;re expecting. Take a look at the return JSON from the ExchangeRate-API:\u003c/p\u003e\n\u003cpre lang=\&quot;json\&quot;\u003e\u003ccode\u003e{\n  \u0026quot;base\u0026quot;: \u0026quot;USD\u0026quot;,\n  \u0026quot;date\u0026quot;: \u0026quot;2021-08-10\u0026quot;,\n  \u0026quot;time_last_updated\u0026quot;: 1628553601,\n  \u0026quot;rates\u0026quot;: {\n    \u0026quot;USD\u0026quot;: 1,\n    \u0026quot;AED\u0026quot;: 3.67,\n    \u0026quot;AFN\u0026quot;: 79.94,\n    \u0026quot;ALL\u0026quot;: 103.28,\n    \u0026quot;AMD\u0026quot;: 491.29,\n    \u0026quot;ANG\u0026quot;: 1.79,\n    \u0026quot;AOA\u0026quot;: 643.02,\n    \u0026quot;ARS\u0026quot;: 96.89,\n    \u0026quot;AUD\u0026quot;: 1.36,\n    \u0026quot;AWG\u0026quot;: 1.79,\n    //the rest omitted for brevity\n  }\n}\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eYou define your class with the same names. Note the slight variation—\u003ccode\u003etimeLastUpdated\u003c/code\u003e is OK:\u003c/p\u003e\n\u003cpre lang=\&quot;java\&quot;\u003e\u003ccode\u003epublic class ExchangeRates {\n    private String base;\n    private String date;\n    private String timeLastUpdated;\n    private Map\u0026lt;String, Double\u0026gt; rates;\n    // constructors, getters, setters...\n}\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eFirst, you&#39;ll make the \u003ccode\u003eGET\u003c/code\u003e request in a similar way that you&#39;ve already seen. There are two differences between the following code and the code you saw earlier. Namely, you use the \u003ccode\u003e.getForObject()\u003c/code\u003e method to return the JSON as an object that you specify, and the \u003ccode\u003eExchangeRates.class\u003c/code\u003e replaces the \u003ccode\u003eString.class\u003c/code\u003e:\u003c/p\u003e\n\u003cpre lang=\&quot;java\&quot;\u003e\u003ccode\u003eExchangeRates response = restTemplate.getForObject(\n                \u0026quot;https://api.exchangerate-api.com/v4/latest/USD\u0026quot;,\n                ExchangeRates.class);\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eThat single line of code returns an instantiated \u003ccode\u003eExchangeRate\u003c/code\u003e object populated with the JSON data. To get access to the data, call the getter methods on the class:\u003c/p\u003e\n\u003cpre lang=\&quot;java\&quot;\u003e\u003ccode\u003eSystem.out.println(response.getBase()); // prints USD\nSystem.out.println(response.getDate()); // prints 2021-08-10\n// etc...\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eIf you don&#39;t want all the fields returned by the API, you can omit them from your class. For example, if you didn&#39;t want the \u003ccode\u003ebase\u003c/code\u003e and \u003ccode\u003edate\u003c/code\u003e fields, you could declare your class like this:\u003c/p\u003e\n\u003cpre lang=\&quot;java\&quot;\u003e\u003ccode\u003epublic class ExchangeRates {\n    private String timeLastUpdated;\n    private Map\u0026lt;String, Double\u0026gt; rates;\n    // constructors, getters, setters...\n}\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eThe resulting object is constructed without those properties.\u003c/p\u003e\n\u003c!-- available callout types: info, success, warning, danger, secondary, star  --\u003e\n\u003cdiv class=\&quot;callout callout-info\&quot;\u003e\u003csvg class=&#39;svg svg-24px&#39; viewBox=&#39;0 0 24 24&#39;\u003e\u003cuse xlink:href=&#39;/assets/images/svg/svg-sprite-action-symbol.svg#ic_info_outline_24px&#39;/\u003e\u003c/svg\u003e\u003ch2 id=\&quot;note-overriding-the-default-naming-strategy\&quot;\u003eNote: Overriding the default naming strategy\u003c/h2\u003e\n\u003cp\u003eThe \u003ccode\u003eRestTemplate\u003c/code\u003e serialization process has a default \u003cem\u003enaming strategy\u003c/em\u003e which automatically converts between standard Java \u003cem\u003ecamelCase\u003c/em\u003e field names and JSON \u003cem\u003esnake_case\u003c/em\u003e property names. That&#39;s why the difference previously noted between the JSON property \u003ccode\u003etime_last_updated\u003c/code\u003e and the Java field \u003ccode\u003etimeLastUpdated\u003c/code\u003e names works without errors. The default naming strategy transparently handles the difference in names for you.\u003c/p\u003e\n\u003cp\u003eThere are times, however, when you may need to override the default naming strategy using the \u003ccode\u003e@JsonProperty()\u003c/code\u003e annotation. For instance, assume an \u003ccode\u003eEmployee\u003c/code\u003e class has the four fields—\u003ccode\u003efirstName\u003c/code\u003e, \u003ccode\u003elastName\u003c/code\u003e, \u003ccode\u003estreetAddress\u003c/code\u003e and \u003ccode\u003esecondAddress\u003c/code\u003e—but the receiver of the JSON expects the address properties to be named: \u003ccode\u003eaddress\u003c/code\u003e and \u003ccode\u003eaddress2\u003c/code\u003e:\u003c/p\u003e\n\u003cpre lang=\&quot;json\&quot;\u003e\u003ccode\u003e{\n  \u0026quot;first_name\u0026quot;: \u0026quot;Lawrence\u0026quot;,\n  \u0026quot;last_name\u0026quot;: \u0026quot;Ellison\u0026quot;,\n  \u0026quot;address\u0026quot;: \u0026quot;1234 Test Drive\u0026quot;,\n  \u0026quot;address2\u0026quot;: \u0026quot;\u0026quot;\n}\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eTo override the default naming strategy for the address fields, you annotate \u003ccode\u003eEmployee.java\u003c/code\u003e twice, once for \u003ccode\u003eaddress\u003c/code\u003e, and the other for \u003ccode\u003eaddress2\u003c/code\u003e. \u003cem\u003eDon&#39;t forget to include the required import, as the following code shows\u003c/em\u003e:\u003c/p\u003e\n\u003cpre lang=\&quot;Java\&quot;\u003e\u003ccode\u003e// Import the JsonProperty annotation in order to use it.\nimport com.fasterxml.jackson.annotation.JsonProperty;\n\npublic class Employee {\n  private String firstName;\n  private String lastName;\n  @JsonProperty(\u0026quot;address\u0026quot;)      // streetAddress =\u0026gt; address\n  private String streetAddress;\n  @JsonProperty(\u0026quot;address2\u0026quot;)     // secondAddress =\u0026gt; address2\n  private String secondAddress;\n\n  // Assume getters and setters\n\n}\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eThere is no need to annotate the \u003ccode\u003efirstName\u003c/code\u003e or \u003ccode\u003elastName\u003c/code\u003e fields since the default naming strategy handles them automatically.\u003c/p\u003e\n\u003c/div\u003e&quot;,&quot;content_file_type&quot;:&quot;lesson&quot;,&quot;path&quot;:&quot;02_Consuming_RESTful_APIs_Part_1/04-processing-API-responses.md&quot;,&quot;created_at&quot;:&quot;2022-01-07T16:15:02.991Z&quot;,&quot;updated_at&quot;:&quot;2022-01-07T16:15:02.991Z&quot;,&quot;autoscore&quot;:false,&quot;title&quot;:&quot;Processing API responses&quot;,&quot;uid&quot;:&quot;0169cc27e02d8550d6372d30c446929d&quot;,&quot;type_relative_position&quot;:4,&quot;default_visibility&quot;:&quot;visible&quot;,&quot;max_checkpoint_submissions&quot;:null,&quot;warnings&quot;:[],&quot;time_limit&quot;:null,&quot;email_on_completion&quot;:false},{&quot;id&quot;:2207,&quot;standard_id&quot;:279,&quot;position&quot;:5,&quot;html&quot;:&quot;\u003ch1 id=\&quot;unit-summary\&quot;\u003eUnit summary\u003c/h1\u003e\n\u003cp\u003eIn this unit, you&#39;ve learned how to:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eMake an HTTP \u003ccode\u003eGET\u003c/code\u003e request to a web API and process the response using \u003ccode\u003eRestTemplate\u003c/code\u003e\u003c/li\u003e\n\u003cli\u003eParse the returned JSON into a Java object using the \u003ccode\u003egetForObject()\u003c/code\u003e method\u003c/li\u003e\n\u003c/ul\u003e\n&quot;,&quot;content_file_type&quot;:&quot;lesson&quot;,&quot;path&quot;:&quot;02_Consuming_RESTful_APIs_Part_1/50-unit-summary.md&quot;,&quot;created_at&quot;:&quot;2022-01-07T16:15:03.013Z&quot;,&quot;updated_at&quot;:&quot;2022-01-07T16:15:03.013Z&quot;,&quot;autoscore&quot;:false,&quot;title&quot;:&quot;Unit summary&quot;,&quot;uid&quot;:&quot;27dc24786ce6e0ed5760675e8046f6f7&quot;,&quot;type_relative_position&quot;:5,&quot;default_visibility&quot;:&quot;visible&quot;,&quot;max_checkpoint_submissions&quot;:null,&quot;warnings&quot;:[],&quot;time_limit&quot;:null,&quot;email_on_completion&quot;:false},{&quot;id&quot;:2208,&quot;standard_id&quot;:279,&quot;position&quot;:6,&quot;html&quot;:&quot;\u003ch1 id=\&quot;tutorial-instructions\&quot;\u003eTutorial instructions\u003c/h1\u003e\n\u003cp\u003eThis tutorial is an opportunity for you to practice what you just learned. It isn&#39;t scored.\u003c/p\u003e\n\u003cp\u003eTo complete the tutorial, follow these steps:\u003c/p\u003e\n\u003col\u003e\n\u003cli\u003eFind the \u003ccode\u003eREADME.md\u003c/code\u003e file in the \u003ccode\u003etutorial\u003c/code\u003e folder for this unit.\u003c/li\u003e\n\u003cli\u003eOpen the \u003ccode\u003eREADME.md\u003c/code\u003e file in Visual Studio Code or your preferred Markdown viewer.\u003c/li\u003e\n\u003cli\u003eFollow the instructions in the \u003ccode\u003eREADME.md\u003c/code\u003e file to complete the tutorial.\u003c/li\u003e\n\u003c/ol\u003e\n\u003cp\u003eIf you get stuck at any point during the tutorial, you can find the solution in the corresponding \u003ccode\u003etutorial-final\u003c/code\u003e folder.\u003c/p\u003e\n&quot;,&quot;content_file_type&quot;:&quot;lesson&quot;,&quot;path&quot;:&quot;02_Consuming_RESTful_APIs_Part_1/70-tutorial.md&quot;,&quot;created_at&quot;:&quot;2022-01-07T16:15:03.036Z&quot;,&quot;updated_at&quot;:&quot;2022-01-07T16:15:03.036Z&quot;,&quot;autoscore&quot;:false,&quot;title&quot;:&quot;Tutorial instructions&quot;,&quot;uid&quot;:&quot;1821e830665e7648815c9ff01e1ebadf&quot;,&quot;type_relative_position&quot;:6,&quot;default_visibility&quot;:&quot;visible&quot;,&quot;max_checkpoint_submissions&quot;:null,&quot;warnings&quot;:[],&quot;time_limit&quot;:null,&quot;email_on_completion&quot;:false},{&quot;id&quot;:2209,&quot;standard_id&quot;:279,&quot;position&quot;:7,&quot;html&quot;:&quot;\u003ch1 id=\&quot;quiz\&quot;\u003eQuiz\u003c/h1\u003e\n\u003c!-- \u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e BEGIN CHALLENGE \u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e --\u003e\n\u003cdiv id=\&quot;challenge-2aa0dd15-15a3-4446-a773-10e9466b1089\&quot;\u003e\u003c/div\u003e\u003c!-- ======================= END CHALLENGE ======================= --\u003e\n\u003c!-- \u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e BEGIN CHALLENGE \u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e --\u003e\n\u003cdiv id=\&quot;challenge-eaf362e2-d85d-4556-a0f8-be5916c9416c\&quot;\u003e\u003c/div\u003e\u003c!-- ======================= END CHALLENGE ======================= --\u003e\n\u003c!-- \u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e BEGIN CHALLENGE \u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e --\u003e\n\u003cdiv id=\&quot;challenge-65c7dac3-30dc-4ffd-9baf-c37a83727720\&quot;\u003e\u003c/div\u003e\u003c!-- ======================= END CHALLENGE ======================= --\u003e\n\u003c!-- \u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e BEGIN CHALLENGE \u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e --\u003e\n\u003cdiv id=\&quot;challenge-c3bf73cc-c4bb-4b6d-b017-4a6409c687f6\&quot;\u003e\u003c/div\u003e\u003c!-- ======================= END CHALLENGE ======================= --\u003e\n\u003c!-- \u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e BEGIN CHALLENGE \u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e --\u003e\n\u003c!-- Replace everything in square brackets [] and remove brackets  --\u003e\n\u003cdiv id=\&quot;challenge-bde361e0-3719-4367-a056-50187bfaf0a6\&quot;\u003e\u003c/div\u003e\u003c!-- ======================= END CHALLENGE ======================= --\u003e\n\u003c!-- \u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e BEGIN CHALLENGE \u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e --\u003e\n\u003c!-- Replace everything in square brackets [] and remove brackets  --\u003e\n\u003cdiv id=\&quot;challenge-96dce60b-2036-40d7-a158-596832b5beb6\&quot;\u003e\u003c/div\u003e\u003c!-- ======================= END CHALLENGE ======================= --\u003e\n\u003c!-- \u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e BEGIN CHALLENGE \u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e --\u003e\n\u003c!-- Replace everything in square brackets [] and remove brackets  --\u003e\n\u003cdiv id=\&quot;challenge-0b2ec352-ebd5-40d0-a78b-e8cf700947ae\&quot;\u003e\u003c/div\u003e\u003c!-- ======================= END CHALLENGE ======================= --\u003e\n\u003c!-- \u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e BEGIN CHALLENGE \u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e --\u003e\n\u003c!-- Replace everything in square brackets [] and remove brackets  --\u003e\n\u003cdiv id=\&quot;challenge-19bc0954-7677-4e6b-9db0-210fb1255f6e\&quot;\u003e\u003c/div\u003e\u003c!-- ======================= END CHALLENGE ======================= --\u003e\n&quot;,&quot;content_file_type&quot;:&quot;lesson&quot;,&quot;path&quot;:&quot;02_Consuming_RESTful_APIs_Part_1/80-quiz.md&quot;,&quot;created_at&quot;:&quot;2022-01-07T16:15:03.064Z&quot;,&quot;updated_at&quot;:&quot;2022-01-07T16:15:03.064Z&quot;,&quot;autoscore&quot;:false,&quot;title&quot;:&quot;Quiz&quot;,&quot;uid&quot;:&quot;a70504ce6d3316dc44ba6ab332012468&quot;,&quot;type_relative_position&quot;:7,&quot;default_visibility&quot;:&quot;visible&quot;,&quot;max_checkpoint_submissions&quot;:null,&quot;warnings&quot;:[],&quot;time_limit&quot;:null,&quot;email_on_completion&quot;:false},{&quot;id&quot;:2210,&quot;standard_id&quot;:279,&quot;position&quot;:8,&quot;html&quot;:&quot;\u003ch1 id=\&quot;exercise\&quot;\u003eExercise\u003c/h1\u003e\n\u003c!-- \u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e BEGIN CHALLENGE \u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e\u003e --\u003e\n\u003cdiv id=\&quot;challenge-1979f3d8-7b57-4fa3-8e8c-19f3b5c54875\&quot;\u003e\u003c/div\u003e\u003c!-- ======================= END CHALLENGE ======================= --\u003e\n&quot;,&quot;content_file_type&quot;:&quot;checkpoint&quot;,&quot;path&quot;:&quot;02_Consuming_RESTful_APIs_Part_1/90-exercise.md&quot;,&quot;created_at&quot;:&quot;2022-01-07T16:15:03.274Z&quot;,&quot;updated_at&quot;:&quot;2022-01-07T16:15:03.274Z&quot;,&quot;autoscore&quot;:true,&quot;title&quot;:&quot;Exercise&quot;,&quot;uid&quot;:&quot;6077fe878a2bfa25b547793beb3786f1&quot;,&quot;type_relative_position&quot;:1,&quot;default_visibility&quot;:&quot;visible&quot;,&quot;max_checkpoint_submissions&quot;:null,&quot;warnings&quot;:[],&quot;time_limit&quot;:null,&quot;email_on_completion&quot;:false}],&quot;current_content_file_position&quot;:4,&quot;next_content_file_link&quot;:&quot;/cohorts/94/blocks/19/content_files/02_Consuming_RESTful_APIs_Part_1/50-unit-summary.md&quot;,&quot;has_submitted_checkpoint&quot;:false,&quot;is_checkpoint_draft&quot;:null,&quot;last_checkpoint_submitted_on&quot;:null,&quot;challenges_with_answers&quot;:[],&quot;cohort_content_file_submitted_challenge_answers_path&quot;:&quot;/cohorts/94/content_files/2206/submitted_challenge_answers&quot;,&quot;github_url&quot;:&quot;https://gitlab.com/te-curriculum/consuming-restful-apis-in-java-lms/blob/release_v2_0/02_Consuming_RESTful_APIs_Part_1/04-processing-API-responses.md&quot;},&quot;challenges&quot;:[],&quot;challengeTypes&quot;:[],&quot;type&quot;:&quot;lesson&quot;,&quot;topics&quot;:[],&quot;submissionPath&quot;:&quot;/cohorts/94/content_files/2206/submitted_challenge_answers&quot;,&quot;customReportPath&quot;:&quot;/cohorts/94/custom_reports/168?block_id=19\u0026path=02_Consuming_RESTful_APIs_Part_1/04-processing-API-responses.md&quot;},&quot;curriculumDetails&quot;:{&quot;blockId&quot;:&quot;19&quot;,&quot;repoDetails&quot;:{&quot;repo_name&quot;:&quot;consuming-restful-apis-in-java-lms&quot;,&quot;org&quot;:&quot;te-curriculum&quot;,&quot;origin&quot;:&quot;gitlab.com&quot;},&quot;standard&quot;:{&quot;block_id&quot;:19,&quot;cohort_id&quot;:94,&quot;description&quot;:&quot;Learn how to retrieve data from a web API.&quot;,&quot;id&quot;:279,&quot;title&quot;:&quot;Consuming RESTful APIs (Part 1)&quot;,&quot;standard&quot;:{&quot;id&quot;:279,&quot;uid&quot;:&quot;edb8336a0c22ff8785c1733093ccfdda&quot;,&quot;release_id&quot;:84,&quot;description&quot;:&quot;Learn how to retrieve data from a web API.&quot;,&quot;title&quot;:&quot;Consuming RESTful APIs (Part 1)&quot;,&quot;success_criteria&quot;:[&quot;success criteria&quot;],&quot;position&quot;:0,&quot;created_at&quot;:&quot;2022-01-07T16:15:02.921Z&quot;,&quot;updated_at&quot;:&quot;2022-01-07T16:15:02.921Z&quot;},&quot;instructor_or_admin&quot;:false,&quot;path&quot;:&quot;/cohorts/94/blocks/19/content_files/02_Consuming_RESTful_APIs_Part_1/01-introduction.md&quot;,&quot;status_class&quot;:&quot;-is-current&quot;,&quot;due_at&quot;:null,&quot;show_points&quot;:true,&quot;cohort_standard_progress_data&quot;:[{&quot;id&quot;:2203,&quot;title&quot;:&quot;Introduction&quot;,&quot;uid&quot;:&quot;1c7125c79be18098af663600e0f6d10f&quot;,&quot;type_relative_position&quot;:1,&quot;content_file_type&quot;:&quot;lesson&quot;,&quot;hidden&quot;:false,&quot;content_file_path&quot;:&quot;/cohorts/94/blocks/19/content_files/02_Consuming_RESTful_APIs_Part_1/01-introduction.md&quot;,&quot;challenges&quot;:[]},{&quot;id&quot;:2204,&quot;title&quot;:&quot;Terminology&quot;,&quot;uid&quot;:&quot;2a13ec394a51ff6ed5461cc65936924f&quot;,&quot;type_relative_position&quot;:2,&quot;content_file_type&quot;:&quot;lesson&quot;,&quot;hidden&quot;:false,&quot;content_file_path&quot;:&quot;/cohorts/94/blocks/19/content_files/02_Consuming_RESTful_APIs_Part_1/02-terminology.md&quot;,&quot;challenges&quot;:[]},{&quot;id&quot;:2205,&quot;title&quot;:&quot;Using an API in code&quot;,&quot;uid&quot;:&quot;874873420c608f86a45517c4fad0bb58&quot;,&quot;type_relative_position&quot;:3,&quot;content_file_type&quot;:&quot;lesson&quot;,&quot;hidden&quot;:false,&quot;content_file_path&quot;:&quot;/cohorts/94/blocks/19/content_files/02_Consuming_RESTful_APIs_Part_1/03-using-an-API-in-code.md&quot;,&quot;challenges&quot;:[]},{&quot;id&quot;:2206,&quot;title&quot;:&quot;Processing API responses&quot;,&quot;uid&quot;:&quot;0169cc27e02d8550d6372d30c446929d&quot;,&quot;type_relative_position&quot;:4,&quot;content_file_type&quot;:&quot;lesson&quot;,&quot;hidden&quot;:false,&quot;content_file_path&quot;:&quot;/cohorts/94/blocks/19/content_files/02_Consuming_RESTful_APIs_Part_1/04-processing-API-responses.md&quot;,&quot;challenges&quot;:[]},{&quot;id&quot;:2207,&quot;title&quot;:&quot;Unit summary&quot;,&quot;uid&quot;:&quot;27dc24786ce6e0ed5760675e8046f6f7&quot;,&quot;type_relative_position&quot;:5,&quot;content_file_type&quot;:&quot;lesson&quot;,&quot;hidden&quot;:false,&quot;content_file_path&quot;:&quot;/cohorts/94/blocks/19/content_files/02_Consuming_RESTful_APIs_Part_1/50-unit-summary.md&quot;,&quot;challenges&quot;:[]},{&quot;id&quot;:2208,&quot;title&quot;:&quot;Tutorial instructions&quot;,&quot;uid&quot;:&quot;1821e830665e7648815c9ff01e1ebadf&quot;,&quot;type_relative_position&quot;:6,&quot;content_file_type&quot;:&quot;lesson&quot;,&quot;hidden&quot;:false,&quot;content_file_path&quot;:&quot;/cohorts/94/blocks/19/content_files/02_Consuming_RESTful_APIs_Part_1/70-tutorial.md&quot;,&quot;challenges&quot;:[]},{&quot;id&quot;:2209,&quot;title&quot;:&quot;Quiz&quot;,&quot;uid&quot;:&quot;a70504ce6d3316dc44ba6ab332012468&quot;,&quot;type_relative_position&quot;:7,&quot;content_file_type&quot;:&quot;lesson&quot;,&quot;hidden&quot;:false,&quot;content_file_path&quot;:&quot;/cohorts/94/blocks/19/content_files/02_Consuming_RESTful_APIs_Part_1/80-quiz.md&quot;,&quot;challenges&quot;:[{&quot;id&quot;:1803,&quot;uid&quot;:&quot;2aa0dd15-15a3-4446-a773-10e9466b1089&quot;,&quot;title&quot;:&quot;Consuming RESTful APIs (Part 1) 1&quot;,&quot;student_submissions&quot;:{&quot;565&quot;:{&quot;status&quot;:&quot;correct&quot;,&quot;correct_points&quot;:1,&quot;total_points&quot;:1}}},{&quot;id&quot;:1804,&quot;uid&quot;:&quot;eaf362e2-d85d-4556-a0f8-be5916c9416c&quot;,&quot;title&quot;:&quot;Consuming RESTful APIs (Part 1) 2&quot;,&quot;student_submissions&quot;:{&quot;565&quot;:{&quot;status&quot;:&quot;correct&quot;,&quot;correct_points&quot;:1,&quot;total_points&quot;:1}}},{&quot;id&quot;:1805,&quot;uid&quot;:&quot;65c7dac3-30dc-4ffd-9baf-c37a83727720&quot;,&quot;title&quot;:&quot;Consuming RESTful APIs (Part 1) 3&quot;,&quot;student_submissions&quot;:{&quot;565&quot;:{&quot;status&quot;:&quot;correct&quot;,&quot;correct_points&quot;:1,&quot;total_points&quot;:1}}},{&quot;id&quot;:1806,&quot;uid&quot;:&quot;c3bf73cc-c4bb-4b6d-b017-4a6409c687f6&quot;,&quot;title&quot;:&quot;Consuming RESTful APIs (Part 1) 4&quot;,&quot;student_submissions&quot;:{&quot;565&quot;:{&quot;status&quot;:&quot;correct&quot;,&quot;correct_points&quot;:1,&quot;total_points&quot;:1}}},{&quot;id&quot;:1807,&quot;uid&quot;:&quot;bde361e0-3719-4367-a056-50187bfaf0a6&quot;,&quot;title&quot;:&quot;Consuming RESTful APIs (Part 1) 5&quot;,&quot;student_submissions&quot;:{&quot;565&quot;:{&quot;status&quot;:&quot;correct&quot;,&quot;correct_points&quot;:1,&quot;total_points&quot;:1}}},{&quot;id&quot;:1808,&quot;uid&quot;:&quot;96dce60b-2036-40d7-a158-596832b5beb6&quot;,&quot;title&quot;:&quot;Consuming RESTful APIs (Part 1) 6&quot;,&quot;student_submissions&quot;:{&quot;565&quot;:{&quot;status&quot;:&quot;correct&quot;,&quot;correct_points&quot;:1,&quot;total_points&quot;:1}}},{&quot;id&quot;:1809,&quot;uid&quot;:&quot;0b2ec352-ebd5-40d0-a78b-e8cf700947ae&quot;,&quot;title&quot;:&quot;Consuming RESTful APIs (Part 1) 7&quot;,&quot;student_submissions&quot;:{&quot;565&quot;:{&quot;status&quot;:&quot;correct&quot;,&quot;correct_points&quot;:1,&quot;total_points&quot;:1}}},{&quot;id&quot;:1810,&quot;uid&quot;:&quot;19bc0954-7677-4e6b-9db0-210fb1255f6e&quot;,&quot;title&quot;:&quot;Consuming RESTful APIs (Part 1) 8&quot;,&quot;student_submissions&quot;:{&quot;565&quot;:{&quot;status&quot;:&quot;correct&quot;,&quot;correct_points&quot;:1,&quot;total_points&quot;:1}}}]},{&quot;id&quot;:2210,&quot;title&quot;:&quot;Exercise&quot;,&quot;uid&quot;:&quot;6077fe878a2bfa25b547793beb3786f1&quot;,&quot;type_relative_position&quot;:1,&quot;content_file_type&quot;:&quot;checkpoint&quot;,&quot;hidden&quot;:false,&quot;content_file_path&quot;:&quot;/cohorts/94/blocks/19/content_files/02_Consuming_RESTful_APIs_Part_1/90-exercise.md&quot;,&quot;challenges&quot;:[{&quot;id&quot;:1811,&quot;uid&quot;:&quot;1979f3d8-7b57-4fa3-8e8c-19f3b5c54875&quot;,&quot;title&quot;:&quot;Exercise for Consuming RESTful APIs - Part 1&quot;,&quot;student_submissions&quot;:{&quot;565&quot;:{&quot;status&quot;:&quot;correct&quot;,&quot;correct_points&quot;:3,&quot;total_points&quot;:3}}}],&quot;checkpoint_submissions&quot;:{&quot;565&quot;:{&quot;id&quot;:26766,&quot;state&quot;:&quot;done&quot;,&quot;created_at&quot;:&quot;2022-05-10T03:13:33.827Z&quot;,&quot;last_performance_percent&quot;:100,&quot;total_possible_points&quot;:3,&quot;points_earned&quot;:3,&quot;path&quot;:&quot;/cohorts/94/checkpoint_submissions/26766&quot;}},&quot;total_points&quot;:3,&quot;correct_points&quot;:3}],&quot;cohort_standard_progress&quot;:{&quot;percent_done&quot;:100,&quot;standard&quot;:{&quot;title&quot;:&quot;Consuming RESTful APIs (Part 1)&quot;,&quot;uid&quot;:&quot;edb8336a0c22ff8785c1733093ccfdda&quot;,&quot;id&quot;:279},&quot;checkpoint_percent&quot;:100,&quot;remaining&quot;:0,&quot;topic_averages&quot;:null},&quot;progress_complete&quot;:100,&quot;cohort_mode&quot;:&quot;Percentage&quot;,&quot;is_completed&quot;:true,&quot;remaining_to_completion&quot;:0},&quot;standardHidden&quot;:false,&quot;curriculumWarningCount&quot;:0},&quot;footer&quot;:&quot;\u003cdiv class=&#39;content-arrow-container&#39;\u003e\n\u003cdiv class=&#39;content-arrows&#39;\u003e\n\u003ca class=\&quot;standard-arrow -prev\&quot; title=\&quot;Using an API in code\&quot; href=\&quot;/cohorts/94/blocks/19/content_files/02_Consuming_RESTful_APIs_Part_1/03-using-an-API-in-code.md\&quot;\u003e\u003cdiv\u003e\n\u003csvg class=&#39;svg svg-24px&#39; title=&#39;arrow that loads previous lesson&#39;\u003e\n\u003cuse xlink:href=&#39;/assets/svg/svg-sprite-navigation-symbol-4866a42bf9ae89a72189bad73804587a03fd9a1d6ee973a00be60321aea055a5.svg#ic_arrow_back_24px&#39;\u003e\u003c/use\u003e\n\u003c/svg\u003e\n\u003cspan\u003e\nUsing an API in code\n\u003c/span\u003e\n\u003c/div\u003e\n\u003c/a\u003e\u003ca class=\&quot;standard-arrow -next\&quot; title=\&quot;Unit summary\&quot; href=\&quot;/cohorts/94/blocks/19/content_files/02_Consuming_RESTful_APIs_Part_1/50-unit-summary.md\&quot;\u003e\u003cdiv\u003e\nNEXT: \u0026nbsp;\n\u003cspan\u003e\nUnit summary\n\u003c/span\u003e\n\u003csvg class=&#39;svg svg-24px&#39; title=&#39;arrow that loads the next lesson&#39;\u003e\n\u003cuse xlink:href=&#39;/assets/svg/svg-sprite-navigation-symbol-4866a42bf9ae89a72189bad73804587a03fd9a1d6ee973a00be60321aea055a5.svg#ic_arrow_forward_24px&#39;\u003e\u003c/use\u003e\n\u003c/svg\u003e\n\u003c/div\u003e\n\u003c/a\u003e\u003c/div\u003e\n\u003c/div\u003e\n&quot;,&quot;user&quot;:{&quot;id&quot;:565,&quot;email&quot;:&quot;hernandezgabriel533@gmail.com&quot;,&quot;isEnrolledStudent&quot;:true,&quot;isInstructorAdminReadOnly&quot;:false,&quot;visitedLessonUids&quot;:[&quot;1c7125c79be18098af663600e0f6d10f&quot;,&quot;2a13ec394a51ff6ed5461cc65936924f&quot;,&quot;874873420c608f86a45517c4fad0bb58&quot;,&quot;1821e830665e7648815c9ff01e1ebadf&quot;,&quot;a70504ce6d3316dc44ba6ab332012468&quot;,&quot;6077fe878a2bfa25b547793beb3786f1&quot;,&quot;27dc24786ce6e0ed5760675e8046f6f7&quot;,&quot;0169cc27e02d8550d6372d30c446929d&quot;]},&quot;utils&quot;:{&quot;visibilityPath&quot;:null,&quot;studentScoresEndpoint&quot;:&quot;/api/v1/cohorts/94/blocks/19/content_files/2206/student_scores&quot;,&quot;takeAssessmentPath&quot;:&quot;/api/v1/cohorts/94/blocks/19/content_files/2206/take_assessment&quot;,&quot;storageKey&quot;:&quot;viewed_new_assessment&quot;,&quot;lessonIcon&quot;:&quot;/assets/svg/baseline-notes-24px-b2fcb87f0e0f44dac10f8931c812f101bb7e87053d5816f38eebf7c05e8e8282.svg#notescontent&quot;,&quot;doesNotCountIcon&quot;:&quot;/assets/images/svg/svg-link_off-24px.svg&quot;,&quot;checkpointIcon&quot;:&quot;/assets/svg/svg-sprite-action-symbol-12e2e8ae9e0248f7f516f9a06fff9bf46178c048e5d56855a130fc1110b2f5a8.svg#ic_grade_24px&quot;,&quot;allCompleteImagePath&quot;:&quot;/assets/svg/svg-sprite-navigation-symbol-4866a42bf9ae89a72189bad73804587a03fd9a1d6ee973a00be60321aea055a5.svg#ic_check_24px&quot;,&quot;awaitingGradeImagePath&quot;:&quot;/assets/svg/svg-sprite-device-symbol-cceef0212c46eab805c221be781050e00c30ebc5668ed08ed19efab96838ba90.svg#ic_access_time_24px&quot;,&quot;spinnerPath&quot;:&quot;/assets/loader-cyan-f1998d982f38e84327f59981551864f417afe4ae7c8d96e3fcc22377a442d1c3.svg&quot;,&quot;rejectedImagePath&quot;:&quot;/assets/images/svg/checkpoint-is-rejected.svg&quot;}}"></div>
+<script>
+  $(document).on("ready", function () {
+    waitAndAddLinks();
+    function addLinks() {
+      $('main')
+        .find('.external-link')
+        .each((i, element) => {
+          $(element).append(`
+            <svg class="svg">
+              <use href="/assets/images/svg/svg-sprite-action-symbol.svg#ic_launch_24px" />
+            </svg>
+          `);
+        });
+    }
+  
+    function waitAndAddLinks() {
+      if (!$("main").size()) {
+        window.requestAnimationFrame(waitAndAddLinks);
+      } else {
+        addLinks();
+      }
+    }
+  
+    // Style lists that have tasks in them
+    var tasksListItems = $(".md-task");
+    if (tasksListItems.length > 0) {
+      tasksListItems.closest("li").addClass("task-list-item").closest("ul").addClass("task-list");
+    }
+    
+    $('pre').each((_i,pre)=>{
+      lang = $(pre).first().attr("lang")
+      $(pre).first().children("code").first().addClass(lang)
+    })
+  
+    hljs.configure({
+      tabReplace: '    ',
+    });
+  
+    $('pre:not([lang])').addClass('text');
+  
+    hljs.initHighlightingOnLoad();
+    window.highlightCodeBlocks();
+  
+    $("iframe.fluidvids-item").each(function(i,vid) {
+      trackVideo(vid);
+    });
+  
+    function trackVideo(video) {
+      var player = new Vimeo(video);
+  
+      player.getVideoId().then(function(id) {
+        var sharedProps = {"content_asset_id": id, "video_player": "vimeo"};
+        player.getDuration().then(function(duration) {
+          sharedProps["total_length"] = duration;
+        })
+  
+        player.getVideoUrl().then(function(url) {
+          sharedProps["content_asset_url"] = url;
+        })
+  
+        player.on('play', function(time) {
+          sharedProps["position"] = time.seconds;
+          if (time.seconds == 0) {
+            analytics.track('Video Playback Started', sharedProps);
+          } else if (time.seconds > 0) {
+            analytics.track('Video Playback Resumed', sharedProps);
+          }
+        });
+  
+        player.on('pause', function(time) {
+          sharedProps["position"] = time.seconds;
+          if (sharedProps["position"] < sharedProps["total_length"]) {
+            analytics.track('Video Playback Paused', sharedProps);
+          } else {
+            analytics.track('Video Playback Completed', sharedProps);
+          }
+        });
+  
+        player.on('bufferstart', function() {
+          player.getCurrentTime().then(function(seconds) {
+            sharedProps["position"] = seconds;
+            analytics.track('Video Playback Buffer Started', sharedProps);
+          })
+        });
+  
+        player.on('bufferend', function() {
+          player.getCurrentTime().then(function(seconds) {
+            sharedProps["position"] = seconds;
+            analytics.track('Video Playback Buffer Completed', sharedProps);
+          })
+        });
+  
+        player.on('seeked', function(time) {
+            sharedProps["position"] = time.seconds;
+            analytics.track('Video Playback Seek Completed', sharedProps);
+        });
+  
+        player.on('ended', function(time) {
+          sharedProps["position"] = seconds;
+          analytics.track('Video Playback Completed', sharedProps);
+        });
+      });
+    }
+  });
+</script>
+
+<script>
+  const sleep = (milliseconds) => {
+    return new Promise(resolve => setTimeout(resolve, milliseconds))
+  }
+  
+  // content file sidebar toggle
+  window.onDocumentReady(async function () {
+    MathJax.config.startup.pageReady()
+    sleep(500).then(() => {
+      var $htmlEl = document.documentElement;
+      var $lessonLayoutEl = document.querySelector('.lesson-layout');
+      if (!$lessonLayoutEl) return;
+      var $sideBarEl = document.querySelector('.content-file-sidebar');
+      var yOffset = (window.pageYOffset || 0);
+      var yTarget = ($lessonLayoutEl.getBoundingClientRect().top + yOffset || -1);
+  
+      if ($sideBarEl) {
+        var isSticky = $sideBarEl.classList.contains('-is-sticky');
+      }
+  
+      var handleScroll = function (e) {
+        yOffset = window.pageYOffset;
+        window.requestAnimationFrame(toggleSticky);
+      };
+  
+      var toggleSticky = function () {
+        if (yOffset >= yTarget) {
+          !isSticky ? $sideBarEl.classList.add('-is-sticky') : null ;
+        } else {
+          $sideBarEl.classList.remove('-is-sticky');
+        }
+      };
+    })
+  });
+  
+  sleep(500).then(() => {
+    // fluidvids.js
+    (function (root, factory) {
+      if (typeof define === 'function' && define.amd) {
+        define(factory);
+      } else if (typeof exports === 'object') {
+        module.exports = factory;
+      } else {
+        root.fluidvids = factory();
+      }
+    })(this, function () {
+  
+      'use strict';
+  
+      var fluidvids = {
+        selector: ['iframe', 'object'],
+        players: ['www.youtube.com', 'player.vimeo.com']
+      };
+  
+      var css = [
+        '.fluidvids {',
+          'width: 100%; max-width: 100%; position: relative;',
+        '}',
+        '.fluidvids-item {',
+          'position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;',
+        '}'
+      ].join('');
+  
+      var head = document.head || document.getElementsByTagName('head')[0];
+  
+      function matches (src) {
+        return new RegExp('^(https?:)?\/\/(?:' + fluidvids.players.join('|') + ').*$', 'i').test(src);
+      }
+  
+      function getRatio (height, width) {
+        return ((parseInt(height, 10) / parseInt(width, 10)) * 100) + '%';
+      }
+  
+      function fluid (elem) {
+        if (!matches(elem.src) && !matches(elem.data) || !!elem.getAttribute('data-fluidvids')) return;
+        var wrap = document.createElement('div');
+        elem.parentNode.insertBefore(wrap, elem);
+        elem.className += (elem.className ? ' ' : '') + 'fluidvids-item';
+        elem.setAttribute('data-fluidvids', 'loaded');
+        wrap.className += 'fluidvids';
+        wrap.style.paddingTop = getRatio(elem.height, elem.width);
+        wrap.appendChild(elem);
+      }
+  
+      function addStyles () {
+        var div = document.createElement('div');
+        div.innerHTML = '<p>x</p><style>' + css + '</style>';
+        head.appendChild(div.childNodes[1]);
+      }
+  
+      fluidvids.render = function () {
+        var nodes = document.querySelectorAll(fluidvids.selector.join());
+        var i = nodes.length;
+        while (i--) {
+          fluid(nodes[i]);
+        }
+      };
+  
+      fluidvids.init = function (obj) {
+        for (var key in obj) {
+          fluidvids[key] = obj[key];
+        }
+        fluidvids.render();
+        addStyles();
+      };
+  
+      return fluidvids;
+    });
+  
+    // fluidvids.js init
+    fluidvids.init({
+      selector: ['iframe', 'object'], // runs querySelectorAll()
+      players: ['player.vimeo.com'] // players to support
+    });
+  })
+</script>
+
+</main>
+<footer>
+<a class="logo bootcamp-os-logo" title="BootcampOS logo links to the home page" href="/"></a>
+<span>&copy; 2022 BootcampOS</span>
+<ul>
+<li><a target="_blank" href="https://techelevator.com/student-privacy-policy">Privacy Policy</a></li>
+<li><a target="_blank" href="https://techelevator.com/terms-of-use">Terms of Use</a></li>
+</ul>
+
+</footer>
+</body>
+<script>
+  window.intercomSettings = {
+    app_id: "",
+    cohort_id:  "94",
+    cohort_label:  "",
+    cohort_name:  "Merit America Jan 2022 - Module 2",
+    created_at: "2022-02-01 19:41:09 UTC",
+    name: "Gabriel Hernandez",
+    email: "hernandezgabriel533@gmail.com",
+    user_role: "student",
+    user_id:  "565",
+  };
+</script>
+<script>
+  (function(){
+    var w=window;
+    var ic=w.Intercom;
+    if(typeof ic==="function"){
+      ic('reattach_activator');
+      ic('update',intercomSettings);
+    }else{
+      var d=document;
+      var i=function(){i.c(arguments)};
+      i.q=[];
+      i.c=function(args){i.q.push(args)};
+      w.Intercom=i;
+      function l(){
+        var s=d.createElement('script');
+        s.type='text/javascript';
+        s.async=true;
+        s.src='https://widget.intercom.io/widget/APP_ID';
+        var x=d.getElementsByTagName('script')[0];
+        x.parentNode.insertBefore(s,x);
+      }
+      if(w.attachEvent){
+        w.attachEvent('onload',l);
+      }else{
+        w.addEventListener('load',l,false);
+      }
+    }
+  })()
+</script>
+
+</html>
