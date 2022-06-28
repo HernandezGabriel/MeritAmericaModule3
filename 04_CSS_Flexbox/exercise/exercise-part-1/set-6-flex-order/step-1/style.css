@@ -9,6 +9,12 @@ body {
   padding: 20px;
   margin-bottom: 20px;
   border: solid 1px #555;
+
+  display: flex;
+}
+
+.bio:nth-child(2) img{
+ order:2;
 }
 
 .bio img {
