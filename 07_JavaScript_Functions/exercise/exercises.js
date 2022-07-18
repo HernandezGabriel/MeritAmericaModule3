@@ -78,9 +78,6 @@ function makeNumber(first,second=''){
  * @param {...number} num a series of numbers to add together
  * @returns {number} the sum of all the parameters (or arguments)
  */
-
-console.log(y);
-
 function addAll(){
    let sum=0;
    for(num of arguments){
