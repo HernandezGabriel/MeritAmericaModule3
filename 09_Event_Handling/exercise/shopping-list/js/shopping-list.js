@@ -36,3 +36,71 @@ function displayGroceries() {
     ul.appendChild(li);
   });
 }
+
+function toggleAll(){
+  let arrayOfList=document.querySelectorAll('li');
+  if(allItemsIncomplete){
+    //SWITCH incomplete to complete
+
+    arrayOfList.forEach((listItem)=> {
+        let icon = listItem.querySelector('i');
+        if(!listItem.classList.contains('completed')){
+          listItem.classList.add('completed');
+          icon.classList.add('completed');
+        }
+    });
+
+    allItemsIncomplete=false;
+    document.getElementById("toggleAll").innerText="Mark All Incomplete";
+  }
+  else{
+    arrayOfList.forEach((listItem)=> {
+        let icon = listItem.querySelector('i');
+        if(listItem.classList.contains('completed')){
+          listItem.classList.remove('completed');
+          icon.classList.remove('completed');
+        }
+    });
+    allItemsIncomplete=true;
+    document.getElementById("toggleAll").innerText="Mark All Complete";
+
+  }
+}
+
+//EVENT LISTENER
+document.addEventListener("DOMContentLoaded", () => {
+  // Register all of your event listeners here
+
+  setPageTitle();
+  displayGroceries();
+
+  //TOGGLE ALL
+  document.getElementById("toggleAll").addEventListener('click', ()=>{
+    toggleAll();
+  });
+
+//SINGLE AND DOUBLE CLICK ON EACH LIST ITEM
+  let arrayOfList=document.querySelectorAll('li');
+  arrayOfList.forEach((listItem)=> {
+
+    let icon = listItem.querySelector('i');
+
+    listItem.addEventListener('click', () =>{
+      if(!listItem.classList.contains('completed')){
+        listItem.classList.add('completed');
+        icon.classList.add('completed');
+      }
+
+    } );
+
+    listItem.addEventListener('dblclick',()=>{
+      if(listItem.classList.contains('completed')){
+        listItem.classList.remove('completed');
+        icon.classList.remove('completed');
+      }
+    });
+
+
+  });
+
+});
